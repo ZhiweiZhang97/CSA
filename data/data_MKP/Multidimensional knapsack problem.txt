@@ -1,0 +1,20 @@
+%% 数据文件说明
+共11个文件
+
+第一个数据文件 mknap1 该数据文件包含7个（来自C.Petersen"Computational experience with variants of the Balas algorithm applied to the selection of R&D projects" Management Science 13(9) (1967) 736-750）测试问题
+该问题所要解决的是：
+Max sum{j=1,...,n} p(j)x(j)
+st  sum{j=1,...,n} r(i,j)x(j) <=b(i)  i=1,...,m
+                   x(j)=0 or 1
+文件数据格式：
+测试问题数（K）
+对于，每一个测试问题 k(k=1,...,K):
+	变量数 n，约束数 m，最优解 解值（若无，则为零）
+	系数 p(j);j=1,...,n
+	对于每一个约束 i(i=1,...,m):系数 r(i,j);j=1,...,n
+	右侧约束 b(i);i=1,...,m
+
+第二个数据文件 mknap2 该数据文件包含48个来自文献的测试问题，文件的数据格式已在文件中给出
+
+数据文件 mknapcb1,mknapcb2,...,mknapcb9 是P.C.Chu和J.E.Baseley"多维背包问题的遗传算法"中解决的问题,Journal of Heuristics, vol. 4, 1998, pp63-86.
+这些数据文件的格式与mknap1的格式相同。文件各包含30个测试问题，前10个问题的紧密率为0.25，中间10个问题的紧密率为0.50，最后10个问题的紧密率为0.75
